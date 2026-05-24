@@ -53,7 +53,8 @@ $projects = $db->query("SELECT * FROM projects WHERE is_active = 1 ORDER BY disp
                     <?php echo htmlspecialchars($bio['description'] ?? 'Aficionado a las ciencias de la computación, la electronica y contabilidad. Desarrollador amateur.'); ?>
                 </p>
                 <div class="btn-group-custom">
-                    <a href="#proyectos" class="btn-custom btn-primary-custom">Ver Proyectos</a>
+                    <a href="https://github.com/skelseed" class="btn-custom btn-primary-custom">Github</a>
+                    <a href="#proyectos" class="btn-custom btn-outline-custom">Ver Proyectos</a>
                     <a href="#contacto" class="btn-custom btn-outline-custom">Contactar</a>
                 </div>
             </div>
