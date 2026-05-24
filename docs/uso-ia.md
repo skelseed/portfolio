@@ -79,3 +79,9 @@ aqui su output:
 | `README.md`              | Guía de instalación completa                                  |
 ...
 
+Escencialmente todo el backend
+
+Ahora lo que se debe hacer es migrar la base de datos de un archivo local SQLite hacia el servidor MySQL, modificando config.php y database.php para que se conecte a la nueva.
+Los demás arhivos ya usan metodos que podemos aprovechar para hacer de esta migración algo más ameno.
+
+
