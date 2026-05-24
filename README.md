@@ -1,5 +1,5 @@
 # Portfolio Urbano Nocturno - Autoadministrable (MySQL)
-[Uso de la IA](https://github.com/skelseed/portfolio/blob/main/docs/uso_ia.md)
+[Uso de la IA](https://github.com/skelseed/portfolio/blob/main/docs/uso-ia.md)
 
 Sistema de portfolio web autoadministrable con tema urbano nocturno, panel de administración completo y base de datos **MySQL**.
 
