@@ -1,9 +1,8 @@
 # Uso de la Inteligencia Artificial en este proyecto
 
-La IA utilizada es Deepseek, la cual tuvo la mayor parte de participación en el proyecto, requerido por el curso.
-[DeepSeek](https://chat.deepseek.com)
-
-También se utilizó Kimi.ai para integraciones adicionales.
+La IA utilizada es Deepseek e Kimi, las cuales tuvieron la mayor parte de participación en el proyecto, requerido por el curso.
+Kimi para IA agentica.
+[DeepSeek](https://chat.deepseek.com)[Kimi](https://www.kimi.com)
 
 ## 1. Generación del README.md
 
@@ -18,22 +17,7 @@ Se solicitó a una IA (DeepSeek) la creación de un archivo `README.md` para un 
 Prompt utilizado:  
 > *"generame un simple README.md para un sitio con js gestor de tareas siguiendo esta estructura: [estructura proporcionada]"*
 
-## 2. Generación del gestor de tareas
-
-Solicité a la IA que tomara la estructura base del formulario y me generara un tablero kanban funcional usando javascript. La IA generó un sitio funcional conservando mis avances en la estructura HTML e ícono.
-
-Prompt utilizado:
-> *"Analiza [estructura html] y generame un tablero kanban funcional"*
-
-## 3. Generación del estilo CSS
-
-Usé la misma estructura para generar un css, cambiando variables del HTML para que pueda asignar un estilo conforme a los requerimientos de este examen.
-La IA respetó las peticiones de estilo y me generó el resultado final.
-
-Prompt utilizado:
-> *"Genera un css aplicable a este sitio, si es necesario remplaza tags HTML pero no toques las clases ya establecidas. Tomate el tiempo que sea necesario: "[código HTML]""*
-
-## 4. Generación del portfolio
+## 2. Generación del portfolio
 
 El sitio comenzó con un prompt que definió toda la estética de mi portfolio.
 
@@ -42,17 +26,56 @@ Prompt utilizado:
 
 Naturalmente luego separé el código css por separado, pero consideré que la plantilla entregada fue realmente linda.
 
-## 5. Integraciones con Kimi.ai
+## 3. Imagen de fondo y Bootstrap para Login
 
 Luego le pedí a Kimi.ai que:
 - Integrara de fondo una imagen que tengo preparada de antemano con la misma estética del sitio entregado por Deepseek
 - Integrara Bootstrap por medio de la etiqueta link y la url de bootstrap (pienso en dejarlo como archivo para que se ejecute de manera local)
 
 Prompt utilizado:
-> *"Pon el fondo en el sitio, e integra Bootstrap en el código. Además, agrega un botón de login en la esquina superior derecha, este se va a tratar de un portfolio 'autoadministrable'"*
+> *"Pon el fondo en el sitio, e integra Bootstrap en el código. Además, agrega un botón de login en la esquina superior derecha, este se va a tratar de un portfolio autoadministrable"*
 
-## 6. Estado actual del proyecto
+## 4. Informacion y datos
 
 Ahora queda hacerlo autoadministrable integrando un login por PHP y rellenar la plantilla con información necesaria, borrando puntos si es necesario.
 
 Un snippet de la plantilla entregada por Deepseek está disponible en la carpeta `docs` de este proyecto.
+
+## 5. Code Dashboard PHP
+
+Decidí usar la IA agentica gratuita de kimi, para la generación del código PHP para los distintos módulos de login y CRUD
+Lo bueno es que ya poseía un formulario login hecho con Bootstrap
+
+para eso usé el siguente prompt:
+
+> *"ahora integra funcionalidad login por php, dame uno o mas archivos php de ser necesario"*
+
+## ANEXO 1: Procrastinación y Logos
+
+Mientras la IA agentica pensaba, decidí crear un logo lindo para mi página usando GIMP.
+Tenía planeado usar un simple rombo naranjo, ya que le da a la estetica.
+
+## 5.1. Resultado del Dashboard
+
+Resulta que Kimi generó todo
+aqui su output:
+
+¡Listo! El sistema de portfolio autoadministrable con PHP está completo. Aquí tienes todo el resumen:
+📦 Archivos creados (13 archivos + assets)
+| Archivo                  | Descripción                                                   |
+| ------------------------ | ------------------------------------------------------------- |
+| `index.php`              | Portfolio público — lee todo de la base de datos              |
+| `login.php`              | Página de login con validación real                           |
+| `logout.php`             | Cierre de sesión seguro                                       |
+| `dashboard.php`          | Panel principal con estadísticas y accesos rápidos            |
+| `admin_bio.php`          | CRUD de Biografía (nombre, título, descripción, email, badge) |
+| `admin_skills.php`       | CRUD de Habilidades con barras de progreso                    |
+| `admin_tech.php`         | CRUD de Tecnologías con selector de iconos Bootstrap          |
+| `admin_projects.php`     | CRUD de Proyectos con selector de emojis y tags               |
+| `config.php`             | Configuración global y rutas                                  |
+| `database.php`           | Inicialización automática de SQLite + datos de ejemplo        |
+| `auth.php`               | Funciones de autenticación (`login`, `logout`, `requireAuth`) |
+| `assets/euHDM2Xg_4x.jpg` | Imagen de fondo urbano nocturno                               |
+| `README.md`              | Guía de instalación completa                                  |
+...
+
