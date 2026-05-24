@@ -47,6 +47,7 @@ $bio = $db->query("SELECT * FROM bio LIMIT 1")->fetch();
             --text-primary: #e0e0e0;
             --text-secondary: #a0a0a0;
             --border-subtle: #1f1f1f;
+            --bs-body-bg: #0a0a0a;
         }
         body {
             background: var(--bg-dark);
